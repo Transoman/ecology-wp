@@ -35,3 +35,16 @@ function mytheme_pingback_header() {
   }
 }
 add_action( 'wp_head', 'mytheme_pingback_header' );
+
+/**
+ * SVG Sprite Icon
+ */
+function hv_the_icon($icon_name, $icon_class = false) {
+  $html = '<svg class="'. $icon_class .'"><use xlink:href="'. THEME_URL .'/images/svg/symbol/sprite.svg#'. $icon_name .'"></use></svg>';
+  echo $html;
+}
+
+function hv_get_icon($icon_name, $icon_class = false) {
+  $html = '<svg class="'. $icon_class .'"><use xlink:href="'. THEME_URL .'/images/svg/symbol/sprite.svg#'. $icon_name .'"></use></svg>';
+  return $html;
+}
