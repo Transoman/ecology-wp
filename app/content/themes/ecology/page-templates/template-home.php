@@ -80,4 +80,72 @@
 </section>
 <!-- /.client -->
 
+<?php
+
+  // check if the flexible content field has rows of data
+  if( have_rows('home_layout') ):
+
+    // loop through the rows of data
+    while ( have_rows('home_layout') ) : the_row();
+
+      if( get_row_layout() == 'services' ): ?>
+
+        <section class="services">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-title"><?php the_sub_field('title'); ?></h2>
+              <p><?php the_sub_field('descr'); ?></p>
+            </div>
+
+            <?php if (have_rows('list')): ?>
+              <div class="services-tabs">
+                <ul class="services-tabs__list">
+                  <?php $i = 0; while (have_rows('list')): the_row(); ?>
+                    <li>
+                      <a href="#services-<?php echo $i++; ?>"><?php the_sub_field('title'); ?></a>
+                    </li>
+                  <?php endwhile; ?>
+                </ul>
+                <?php $j = 0; while (have_rows('list')): the_row(); ?>
+                  <div class="services-tabs__item" id="services-<?php echo $j++; ?>">
+                    <?php if (have_rows('list_item')): ?>
+                      <div class="row">
+                        <?php while (have_rows('list_item')): the_row(); ?>
+                          <div class="col-md-6">
+                            <div class="services-tabs__wrap">
+                              <?php echo wp_get_attachment_image(get_sub_field('icon'), 'thumbnail', false, array('class' => 'services-tabs__icon')); ?>
+                              <p><?php the_sub_field('text'); ?></p>
+                            </div>
+                          </div>
+                        <?php endwhile; ?>
+                      </div>
+                    <?php endif; ?>
+                  </div>
+                <?php endwhile; ?>
+              </div>
+            <?php endif; ?>
+
+            <div class="btn-wrap">
+              <a href="#" class="btn">Узнать больше</a>
+              <span class="btn-descr">Нажмите кнопку, <br>чтобы узнать больше</span>
+            </div>
+
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /.services -->
+
+
+      <?php endif;
+
+    endwhile;
+
+  else :
+
+    // no layouts found
+
+  endif;
+
+?>
+
 <?php get_footer(); ?>

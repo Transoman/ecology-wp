@@ -3,7 +3,8 @@
 global.jQuery = require('jquery');
 let svg4everybody = require('svg4everybody'),
   fancybox = require('@fancyapps/fancybox'),
-  popup = require('jquery-popup-overlay');
+  popup = require('jquery-popup-overlay'),
+  tabslet = require('tabslet');
 
 jQuery(document).ready(function($) {
   // Toggle nav menu
@@ -20,6 +21,9 @@ jQuery(document).ready(function($) {
       $(this).find('label.error').remove();
     }
   });
+
+  // Tabs
+  $('.services-tabs').tabslet();
 
   // SVG
   svg4everybody({});

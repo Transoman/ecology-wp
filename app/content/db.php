@@ -1,0 +1,1 @@
+C:/OSPanel/domains/ecology.loc/app/content/plugins/query-monitor/wp-content/db.php
