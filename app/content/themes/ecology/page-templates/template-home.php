@@ -370,4 +370,43 @@
 </section>
 <!-- /.stages -->
 
+<section class="key">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Сделаем все под ключ...</h2>
+      <p>Выполним всю работу за вас, вам остаеться только расписаться и поставить печать!</p>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-xl-7">
+        <div class="key__img">
+          <img src="<?php echo THEME_URL; ?>/images/content/key.png" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 col-xl-5">
+        <div class="key__content">
+          <div class="key__item">
+            <div class="key__number">01</div>
+            <h3 class="key__title">Смысл 1</h3>
+            <p>Стоимость работ такая же как и у всех. <br>Мы не заламываем цен. <br>Мы не демпингуем</p>
+          </div>
+          <div class="key__item">
+            <div class="key__number">02</div>
+            <h3 class="key__title">Смысл 2</h3>
+            <p>Работая с нами вы застрахованы от обмана. <br>Сначала принимаете работу потом платитем</p>
+          </div>
+          <div class="key__item">
+            <div class="key__number">03</div>
+            <h3 class="key__title">Смысл 3</h3>
+            <p>Вы получите Коммерческое предложение <br>В котором даже школьнику будет понятна <br>и обоснована каждая цифра</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.key -->
+
 <?php get_footer(); ?>
