@@ -24,6 +24,7 @@ jQuery(document).ready(function($) {
 
   // Tabs
   $('.services-tabs').tabslet();
+  $('.stages-tabs').tabslet();
 
   // SVG
   svg4everybody({});

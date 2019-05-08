@@ -246,4 +246,128 @@
 
 ?>
 
+<section class="stages" style="background-image: url(<?php echo THEME_URL; ?>/images/general/stages-bg.jpg);">
+  <div class="container clearfix">
+    <div class="stages__wrap">
+      <h2 class="section-title">Этапы работы</h2>
+      
+      <div class="stages-tabs">
+        <ul class="stages-tabs__list">
+          <li><a href="#stage-1">1. 5 минут</a></li>
+          <li><a href="#stage-2">2. Оценка объёмов работы</a></li>
+          <li><a href="#stage-3">3. Коммерческое предложение</a></li>
+          <li><a href="#stage-4">4. Договор</a></li>
+          <li>
+            <a href="#stage-5">5. Инвентаризация
+              <span class="stages-tabs__list-label">Первый авансовый платеж
+                <?php hv_the_icon('ruble'); ?>
+              </span>
+            </a>
+          </li>
+          <li><a href="#stage-6">6. Разработка Проекта</a></li>
+          <li>
+            <a href="#stage-7">7. Согласование Проекта <br>с заказчиком
+              <span class="stages-tabs__list-label">Второй авансовый платеж
+                <?php hv_the_icon('ruble'); ?>
+              </span>
+            </a>
+          </li>
+          <li><a href="#stage-8">8. Получаем разрешительный <br>документ</a></li>
+        </ul>
+
+        <div class="stages-tabs__item" id="stage-1">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">1. 5 минут</h3>
+          <p>Оставите заявку и мы вам перезвоним.</p>
+          <p>Либо звоните бесплатно по тел. <br><a href="tel:88002506774">8 (800) 250-67-74</a></p>
+          <a href="#" class="btn callback_open">Заказать звонок</a>
+        </div>
+
+        <div class="stages-tabs__item" id="stage-2">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">2. Оценка объёмов работы</h3>
+          <p>На этом этапе мы вышлем вам на электронную почту опросный лист для заполнения</p>
+        </div>
+
+        <div class="stages-tabs__item" id="stage-3">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">3. Коммерческое предложение</h3>
+          <p>На этом этапе мы готовим КП и согласовываем с вами объёмы и условия работы</p>
+        </div>
+
+        <div class="stages-tabs__item" id="stage-4">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">4. Договор</h3>
+          <p>Готовим договор и подписываем. Оригинал договора направляем курьером за наш счет.</p>
+        </div>
+
+        <div class="stages-tabs__item" id="stage-5">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">5. Инвентаризация</h3>
+          <p>Готовим отчет по инвентаризации, согласовываем с вами.</p>
+        </div>
+
+        <div class="stages-tabs__item" id="stage-6">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">6. Разработка проекта</h3>
+        </div>
+
+        <div class="stages-tabs__item" id="stage-7">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">7. Согласование проекта с заказчиком</h3>
+        </div>
+
+        <div class="stages-tabs__item" id="stage-8">
+          <div class="stages-tabs__img-wrap">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <div class="stages-tabs__icon-wrap">
+              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+            </div>
+          </div>
+          <h3 class="stages-tabs__title">8. Получаем разрешительный документ</h3>
+          <p>На этом этапе мы через портал гос.услуги либо лично направляем проект на согласование в соответствующие инстанции</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.stages -->
+
 <?php get_footer(); ?>
