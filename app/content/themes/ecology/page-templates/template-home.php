@@ -197,4 +197,53 @@
   </div>
 </section>
 
+
+<?php
+
+  // check if the flexible content field has rows of data
+  if( have_rows('home_layout') ):
+
+    // loop through the rows of data
+    while ( have_rows('home_layout') ) : the_row();
+
+      if( get_row_layout() == 'lab' ): ?>
+
+        <section class="lab">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-title"><?php the_sub_field('title'); ?></h2>
+              <?php the_sub_field('descr'); ?>
+            </div>
+
+            <div class="lab__wrap">
+              <div class="lab__img lab__img--1">
+                <a href="<?php echo wp_get_attachment_image_url(get_sub_field('img_1'), 'full'); ?>" data-fancybox="group">
+                  <?php echo wp_get_attachment_image(get_sub_field('img_1'), 'large'); ?>
+                </a>
+              </div>
+              <div class="lab__img">
+                <a href="<?php echo wp_get_attachment_image_url(get_sub_field('img_2'), 'full'); ?>" data-fancybox="group">
+                  <?php echo wp_get_attachment_image(get_sub_field('img_2'), 'large'); ?>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /.lab -->
+
+
+      <?php endif;
+
+    endwhile;
+
+  else :
+
+    // no layouts found
+
+  endif;
+
+?>
+
 <?php get_footer(); ?>
