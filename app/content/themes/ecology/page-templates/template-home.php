@@ -38,11 +38,7 @@
         </section>
 
 
-      <?php elseif( get_row_layout() == 'download' ):
-
-        $file = get_sub_field('file');
-
-      endif;
+      <?php endif;
 
     endwhile;
 
@@ -53,5 +49,35 @@
   endif;
 
 ?>
+
+<section class="client">
+  <div class="container">
+    <h2 class="section-title">Для кого мы работаем</h2>
+    <div class="client__wrap">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="client__item">
+            <img src="<?php echo THEME_URL; ?>/images/content/client-1.png" alt="">
+            <div class="client__item-content">
+              <p class="client__item-title">Рудные</p>
+              <span class="client__item-subtitle">месторождения</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="client__item">
+            <img src="<?php echo THEME_URL; ?>/images/content/client-2.png" alt="">
+            <div class="client__item-content">
+              <p class="client__item-title">Россыпные</p>
+              <span class="client__item-subtitle">месторождения</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.client -->
 
 <?php get_footer(); ?>
