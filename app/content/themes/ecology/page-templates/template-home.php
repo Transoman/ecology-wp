@@ -409,4 +409,45 @@
 </section>
 <!-- /.key -->
 
+<section class="cost">
+  <div class="container">
+    <h2 class="section-title">Стоимость услуг</h2>
+
+    <div class="row">
+      <div class="col-lg-6 col-xl-5">
+        <div class="cost__content">
+          <div class="cost__item">
+            <div class="cost__icon-wrap">
+              <?php hv_the_icon('discount', 'cost__icon'); ?>
+            </div>
+            <h3 class="cost__title">Работаем по среднерыночным ценам</h3>
+            <p>Стоимость работ такая же как и у всех. <br>Мы не заламываем цен. <br>Мы не демпингуем</p>
+          </div>
+          <div class="cost__item">
+            <div class="cost__icon-wrap">
+              <?php hv_the_icon('card', 'cost__icon'); ?>
+            </div>
+            <h3 class="cost__title">Никакой предоплаты</h3>
+            <p>Работая с нами вы застрахованы от обмана. <br>Сначала принимаете работу потом платите.</p>
+          </div>
+          <div class="cost__item">
+            <div class="cost__icon-wrap">
+              <?php hv_the_icon('check-mark', 'cost__icon'); ?>
+            </div>
+            <h3 class="cost__title">Прозрачное ценообразование</h3>
+            <p>Вы получите Коммерческое предложение <br>В котором даже школьнику будет понятна <br>и обоснована каждая цифра</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 offset-lg-1 col-xl-4 offset-xl-2">
+        <div class="form-wrap">
+          <img src="<?php echo THEME_URL; ?>/images/content/cost.png" alt="">
+          <?php echo do_shortcode('[contact-form-7 id="5" title="Контактная форма 1"]'); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer(); ?>
