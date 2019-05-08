@@ -148,4 +148,53 @@
 
 ?>
 
+<section class="s-advantages">
+  <div class="container">
+    <h2 class="section-title">Почему нам можно доверять?</h2>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-4 col-xl-3 advantages">
+        <div class="advantages__inner">
+          <div class="advantages__icon-wrap">
+            <?php hv_the_icon('credit-card', 'advantages__icon'); ?>
+            <span class="advantages__number">01</span>
+          </div>
+          <h3 class="advantages__title">Начало работы без <br>предоплаты</h3>
+          <p>Вы ничем не рискуете платите только после того как увидите первые результаты</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-3 advantages">
+        <div class="advantages__inner">
+          <div class="advantages__icon-wrap">
+            <?php hv_the_icon('architecture-and-city', 'advantages__icon'); ?>
+            <span class="advantages__number">02</span>
+          </div>
+          <h3 class="advantages__title">Опыт работы с предприятиями горнодобывающего комплекса</h3>
+          <p>В команде работают специалисты с опытом работы на крупнейшых горнодобывающих предприятиях</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-3 advantages">
+        <div class="advantages__inner">
+          <div class="advantages__icon-wrap">
+            <?php hv_the_icon('file', 'advantages__icon'); ?>
+            <span class="advantages__number">03</span>
+          </div>
+          <h3 class="advantages__title">Справимся с любым объёмом работы</h3>
+          <p>Компания имеет более 10 внештатных проектировщиков что помагает обработать большой поток заказов</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4 col-xl-3 advantages">
+        <div class="advantages__inner">
+          <div class="advantages__icon-wrap">
+            <?php hv_the_icon('auction', 'advantages__icon'); ?>
+            <span class="advantages__number">04</span>
+          </div>
+          <h3 class="advantages__title">Оплатим ваши штрафы <br>за свой счет</h3>
+          <p>Получили штраф по нашей недоработке, мы его оплатим.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <?php get_footer(); ?>
