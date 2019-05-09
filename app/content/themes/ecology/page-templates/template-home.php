@@ -450,4 +450,37 @@
   </div>
 </section>
 
+<section class="delivery">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Доставка оригинал документа курьером по всей России</h2>
+      <p>в течении 4 дней за наш счет</p>
+    </div>
+
+    <div class="delivery__wrap">
+      <div class="delivery__img">
+        <a href="<?php echo THEME_URL; ?>/images/content/delivery.jpg" data-fancybox>
+          <img src="<?php echo THEME_URL; ?>/images/content/delivery-sm.jpg" alt="">
+
+          <div class="delivery__img-text">
+            <?php hv_the_icon('zoom'); ?>
+            <p>Письмо о <br>сотрудничестве</p>
+            <span>Посмотреть</span>
+          </div>
+        </a>
+      </div>
+      
+      <div class="delivery__map">
+        <img src="<?php echo THEME_URL; ?>/images/content/map.png" alt="">
+        <div class="delivery__info">
+          <div class="delivery__info-text">Сотрудничаем со службой <br>экспресс доставки</div>
+          <img src="<?php echo THEME_URL; ?>/images/content/delivery-logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.delivery -->
+
 <?php get_footer(); ?>

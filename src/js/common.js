@@ -1,7 +1,7 @@
 'use strict';
 
 global.jQuery = require('jquery');
-let svg4everybody = require('svg4everybody'),
+var svg4everybody = require('svg4everybody'),
   fancybox = require('@fancyapps/fancybox'),
   popup = require('jquery-popup-overlay'),
   tabslet = require('tabslet');
