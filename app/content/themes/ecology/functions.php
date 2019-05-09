@@ -82,6 +82,11 @@ if ( ! function_exists( 'eco_setup' ) ) :
       'image',
       'video'
     ) );
+
+    /**
+     * Register new image size
+     */
+    add_image_size( 'team', 370, 270, true );
   }
 endif;
 add_action( 'after_setup_theme', 'eco_setup' );
@@ -164,3 +169,8 @@ if ( defined( 'JETPACK__VERSION' ) ) {
    * ACF
    */
   require get_template_directory() . '/inc/acf.php';
+
+  /**
+   * Custom Post Type
+   */
+  require get_template_directory() . '/inc/custom_post_type.php';

@@ -48,3 +48,21 @@ function hv_get_icon($icon_name, $icon_class = false) {
   $html = '<svg class="'. $icon_class .'"><use xlink:href="'. THEME_URL .'/images/svg/symbol/sprite.svg#'. $icon_name .'"></use></svg>';
   return $html;
 }
+
+/**
+ * Get teams
+ */
+
+function get_teams($count = null) {
+  $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+  $args = array(
+    'post_type' => 'team',
+    'posts_per_page' => $count ? $count : get_option('posts_per_page'),
+    'paged' => $paged,
+    'order' => 'ASC'
+  );
+
+  $teams = new WP_Query( $args );
+
+  return $teams;
+}

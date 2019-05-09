@@ -17,3 +17,46 @@
     margin-left: 0
     margin-top: 20px
     text-align: center
+
+.swiper-btn-wrap
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 25px
+  .swiper-button-prev,
+  .swiper-button-next
+    position: static
+    margin: 0
+  .swiper-button-prev
+    margin-right: 10px
+
+.swiper-button-prev,
+.swiper-button-next
+  width: auto
+  height: 35px
+  padding: 0 15px
+  background: #fff
+  border-radius: 25px
+  border: 1px solid $border-color
+  line-height: 33px
+  font-weight: 500
+  +trans
+  &:hover
+    color: $orange
+    svg
+      fill: $orange
+  &:focus
+    outline: none
+  svg
+    width: 7px
+    height: 8px
+    fill: $main-color
+    +trans
+    vertical-align: inherit
+.swiper-button-prev
+  svg
+    margin-right: 5px
+.swiper-button-next
+  svg
+    margin-left: 5px

@@ -483,4 +483,61 @@
 </section>
 <!-- /.delivery -->
 
+<section class="teams">
+  <div class="container">
+    <h2 class="section-title">Наша команда</h2>
+
+    <?php $teams = get_teams(-1);
+    if ($teams->have_posts()): ?>
+      <div class="teams-slider swiper-container">
+        <div class="swiper-wrapper">
+          <?php while ($teams->have_posts()): $teams->the_post(); ?>
+            <div class="teams-slider__item swiper-slide">
+              <?php the_post_thumbnail('team'); ?>
+
+              <div class="teams-slider__overlay">
+                <div class="teams-slider__overlay-group">
+                  <h3 class="teams-slider__title"><?php the_title(); ?></h3>
+                  <p class="teams-slider__position"><?php the_field('position'); ?></p>
+                </div>
+                <a href="#" class="teams-slider__link">Узнать больше <?php hv_the_icon('arrow-right', 'teams-slider__link-icon'); ?></a>
+              </div>
+
+              <div class="teams-slider__info">
+                <button type="button" class="teams-slider__close">
+                  <?php hv_the_icon('close', 'teams-slider__close-icon'); ?>
+                </button>
+
+                <h3 class="teams-slider__title"><?php the_title(); ?></h3>
+                <p class="teams-slider__position"><?php the_field('position'); ?></p>
+
+                <div class="teams-slider__text" data-simplebar>
+                  <?php the_content(); ?>
+                </div>
+              </div>
+            </div>
+          <?php endwhile; wp_reset_postdata(); ?>
+        </div>
+        <div class="swiper-btn-wrap">
+          <div class="swiper-button-prev">
+            <?php hv_the_icon('arrow-left'); ?>
+            Назад
+          </div>
+          <div class="swiper-button-next">
+            Далле
+            <?php hv_the_icon('arrow-right'); ?>
+          </div>
+        </div>
+      </div>
+    <?php endif; ?>
+
+    <div class="btn-wrap">
+      <a href="#" class="btn">Узнать историю</a>
+      <span class="btn-descr">Нажмите кнопку, чтобы узнать <br>историю и опыт компании</span>
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.teams -->
+
 <?php get_footer(); ?>
