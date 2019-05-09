@@ -107,11 +107,15 @@
       &__title, &__position
         position: static
         transform: none
+      &__position
+        max-width: 240px
     &.is-active
       transform: translateY(0)
   &__text
     max-height: 170px
     margin-top: 15px
+    +r(992)
+      max-height: 140px
     +r(480)
       max-height: 120px
     p

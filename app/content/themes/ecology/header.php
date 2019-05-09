@@ -38,29 +38,32 @@
     </div>
     <!-- /.header__top -->
 
-    <div class="container">
+    <div class="header__bottom">
+      <div class="container">
 
-      <nav class="nav">
-        <ul class="nav-list">
-          <li>
-            <a href="#">Экологическое сопровождение</a>
-          </li>
-          <li>
-            <a href="#">Оформление водного объекта</a>
-          </li>
-          <li>
-            <a href="#">Оформление право пользования лицензионным участком</a>
-          </li>
-          <li>
-            <a href="#">Цена</a>
-          </li>
-          <li>
-            <a href="#">О компании</a>
-          </li>
-        </ul>
-      </nav>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#services">Экологическое сопровождение</a>
+            </li>
+            <li>
+              <a href="#services">Оформление водного объекта</a>
+            </li>
+            <li>
+              <a href="#services">Оформление право пользования лицензионным участком</a>
+            </li>
+            <li>
+              <a href="#price">Цена</a>
+            </li>
+            <li>
+              <a href="#teams">О компании</a>
+            </li>
+          </ul>
+        </nav>
 
+      </div>
     </div>
+
   </header><!-- /.header-->
 
   <div class="content">

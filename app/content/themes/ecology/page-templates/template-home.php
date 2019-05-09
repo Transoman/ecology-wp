@@ -28,7 +28,7 @@
               </div>
 
               <div class="btn-wrap">
-                <a href="#" class="btn">Узнать больше</a>
+                <a href="#" class="btn callback_open">Узнать больше</a>
                 <span class="btn-descr">Нажмите кнопку, <br>чтобы узнать больше</span>
               </div>
 
@@ -90,7 +90,7 @@
 
       if( get_row_layout() == 'services' ): ?>
 
-        <section class="services">
+        <section class="services" id="services">
           <div class="container">
             <div class="section-head">
               <h2 class="section-title"><?php the_sub_field('title'); ?></h2>
@@ -126,7 +126,7 @@
             <?php endif; ?>
 
             <div class="btn-wrap">
-              <a href="#" class="btn">Узнать больше</a>
+              <a href="#" class="btn callback_open">Узнать больше</a>
               <span class="btn-descr">Нажмите кнопку, <br>чтобы узнать больше</span>
             </div>
 
@@ -277,9 +277,9 @@
 
         <div class="stages-tabs__item" id="stage-1">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-1.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
-              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+              <?php hv_the_icon('customer-service', 'stages-tabs__icon'); ?>
             </div>
           </div>
           <h3 class="stages-tabs__title">1. 5 минут</h3>
@@ -301,9 +301,9 @@
 
         <div class="stages-tabs__item" id="stage-3">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-3.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
-              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+              <?php hv_the_icon('handshake', 'stages-tabs__icon'); ?>
             </div>
           </div>
           <h3 class="stages-tabs__title">3. Коммерческое предложение</h3>
@@ -312,9 +312,9 @@
 
         <div class="stages-tabs__item" id="stage-4">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-4.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
-              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+              <?php hv_the_icon('contract', 'stages-tabs__icon'); ?>
             </div>
           </div>
           <h3 class="stages-tabs__title">4. Договор</h3>
@@ -323,9 +323,9 @@
 
         <div class="stages-tabs__item" id="stage-5">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-5.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
-              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+              <?php hv_the_icon('report', 'stages-tabs__icon'); ?>
             </div>
           </div>
           <h3 class="stages-tabs__title">5. Инвентаризация</h3>
@@ -334,9 +334,9 @@
 
         <div class="stages-tabs__item" id="stage-6">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-6.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
-              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+              <?php hv_the_icon('collective', 'stages-tabs__icon'); ?>
             </div>
           </div>
           <h3 class="stages-tabs__title">6. Разработка проекта</h3>
@@ -344,9 +344,9 @@
 
         <div class="stages-tabs__item" id="stage-7">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-7.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
-              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+              <?php hv_the_icon('training', 'stages-tabs__icon'); ?>
             </div>
           </div>
           <h3 class="stages-tabs__title">7. Согласование проекта с заказчиком</h3>
@@ -354,9 +354,9 @@
 
         <div class="stages-tabs__item" id="stage-8">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
+            <img src="<?php echo THEME_URL; ?>/images/content/stage-8.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
-              <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
+              <?php hv_the_icon('insurance', 'stages-tabs__icon'); ?>
             </div>
           </div>
           <h3 class="stages-tabs__title">8. Получаем разрешительный документ</h3>
@@ -409,7 +409,7 @@
 </section>
 <!-- /.key -->
 
-<section class="cost">
+<section class="cost" id="price">
   <div class="container">
     <h2 class="section-title">Стоимость услуг</h2>
 
@@ -483,7 +483,7 @@
 </section>
 <!-- /.delivery -->
 
-<section class="teams">
+<section class="teams" id="teams">
   <div class="container">
     <h2 class="section-title">Наша команда</h2>
 
@@ -574,7 +574,7 @@
                 <ul class="result__social">
                   <?php if (get_sub_field('whatsapp')): ?>
                     <li>
-                      <a href="<?php echo esc_url(get_sub_field('whatsapp')); ?>">
+                      <a href="<?php echo esc_url(get_sub_field('whatsapp')); ?>" target="_blank">
                         <div class="result__social-icon-wrap">
                           <img src="<?php echo THEME_URL; ?>/images/general/whatsapp.svg" width="24" alt="">
                         </div>
@@ -584,7 +584,7 @@
                   <?php endif; ?>
                   <?php if (get_sub_field('vk')): ?>
                     <li>
-                      <a href="<?php echo esc_url(get_sub_field('vk')); ?>">
+                      <a href="<?php echo esc_url(get_sub_field('vk')); ?>" target="_blank">
                         <div class="result__social-icon-wrap">
                           <img src="<?php echo THEME_URL; ?>/images/general/vk.svg" width="24" alt="">
                         </div>
@@ -594,7 +594,7 @@
                   <?php endif; ?>
                   <?php if (get_sub_field('direct')): ?>
                     <li>
-                      <a href="<?php echo esc_url(get_sub_field('direct')); ?>">
+                      <a href="<?php echo esc_url(get_sub_field('direct')); ?>" target="_blank">
                         <div class="result__social-icon-wrap">
                           <img src="<?php echo THEME_URL; ?>/images/general/instagram.svg" width="24" alt="">
                         </div>
@@ -621,5 +621,36 @@
   endif;
 
 ?>
+
+<section class="contact">
+  <div class="container">
+    <h2 class="section-title">Контакты</h2>
+
+    <div class="row">
+      <div class="col-lg-6 col-xl-5">
+        <div class="contact__content">
+          <h3>Наш адрес:</h3>
+          <?php the_field('address', 'option'); ?>
+          <p>Позвоните нам по единому номеру или оставьте заявку на сайте.</p>
+          <a href="tel:<?php echo preg_replace('![^0-9]+!', '', get_field('phone', 'option')); ?>" class="contact__phone"><?php the_field('phone', 'option'); ?></a>
+          <span class="contact__phone-descr">Звонок по России бесплатно</span>
+          <p><b>e-mail:</b> <a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></p>
+          <p><b><?php the_field('company_name', 'option'); ?></b></p>
+          <p><b>ИНН</b> <?php the_field('inn', 'option'); ?></p>
+          <p><b>ОГНИП</b> <?php the_field('ognip', 'option'); ?></p>
+        </div>
+      </div>
+
+      <div class="col-lg-5 offset-lg-1 col-xl-4 offset-xl-2">
+        <div class="form-wrap">
+          <img src="<?php echo THEME_URL; ?>/images/content/contact.png" alt="">
+          <?php echo do_shortcode('[contact-form-7 id="66" title="Форма вопросов"]'); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.container -->
+</section>
+<!-- /.contact -->
 
 <?php get_footer(); ?>

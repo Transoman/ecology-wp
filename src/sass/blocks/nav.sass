@@ -49,9 +49,12 @@
   background: none
   z-index: 101
   cursor: pointer
-  +trans
   +r(1200)
     display: block
+  &.active
+    position: fixed
+    top: 32px
+    right: 15px
   &:focus
     outline: none
   &__line

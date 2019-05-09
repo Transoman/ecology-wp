@@ -34,6 +34,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "bootstrap": "^4.2.1",
+    "imask": "^5.1.1",
     "jquery": "^3.3.1",
     "jquery-popup-overlay": "^2.1.0",
     "simplebar": "^4.0.0-alpha.9",
