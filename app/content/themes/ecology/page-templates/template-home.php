@@ -540,4 +540,86 @@
 </section>
 <!-- /.teams -->
 
+<?php
+
+  // check if the flexible content field has rows of data
+  if( have_rows('home_layout') ):
+
+    // loop through the rows of data
+    while ( have_rows('home_layout') ) : the_row();
+
+      if( get_row_layout() == 'result' ): ?>
+
+        <section class="result">
+          <div class="container">
+            <div class="section-head">
+              <h2 class="section-title"><?php the_sub_field('title'); ?></h2>
+              <?php the_sub_field('descr'); ?>
+            </div>
+
+            <div class="result__wrap">
+              <div class="result__col result__col--img">
+                <img src="<?php echo THEME_URL; ?>/images/content/mock.png" alt="">
+              </div>
+              <div class="result__col result__col--content">
+                <div class="result__text">
+                  <?php the_sub_field('text'); ?>
+                </div>
+              </div>
+              <div class="result__col result__col--contact">
+                <div class="result__profile">
+                  <img src="<?php echo THEME_URL; ?>/images/content/result-img.jpg" alt="">
+                  <p>Напишите мне:</p>
+                </div>
+                <ul class="result__social">
+                  <?php if (get_sub_field('whatsapp')): ?>
+                    <li>
+                      <a href="<?php echo esc_url(get_sub_field('whatsapp')); ?>">
+                        <div class="result__social-icon-wrap">
+                          <img src="<?php echo THEME_URL; ?>/images/general/whatsapp.svg" width="24" alt="">
+                        </div>
+                        <span>Whatsapp</span>
+                      </a>
+                    </li>
+                  <?php endif; ?>
+                  <?php if (get_sub_field('vk')): ?>
+                    <li>
+                      <a href="<?php echo esc_url(get_sub_field('vk')); ?>">
+                        <div class="result__social-icon-wrap">
+                          <img src="<?php echo THEME_URL; ?>/images/general/vk.svg" width="24" alt="">
+                        </div>
+                        <span>VK</span>
+                      </a>
+                    </li>
+                  <?php endif; ?>
+                  <?php if (get_sub_field('direct')): ?>
+                    <li>
+                      <a href="<?php echo esc_url(get_sub_field('direct')); ?>">
+                        <div class="result__social-icon-wrap">
+                          <img src="<?php echo THEME_URL; ?>/images/general/instagram.svg" width="24" alt="">
+                        </div>
+                        <span>Direct</span>
+                      </a>
+                    </li>
+                  <?php endif; ?>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </section>
+        <!-- /.result -->
+
+      <?php endif;
+
+    endwhile;
+
+  else :
+
+    // no layouts found
+
+  endif;
+
+?>
+
 <?php get_footer(); ?>
