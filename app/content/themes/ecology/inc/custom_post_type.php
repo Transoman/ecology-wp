@@ -15,7 +15,7 @@
       'labels'                => $labels,
       'supports'              => array( 'title', 'editor', 'thumbnail' ),
       'hierarchical'          => false,
-      'public'                => true,
+      'public'                => false,
       'show_ui'               => true,
       'show_in_menu'          => true,
       'menu_position'         => 5,
