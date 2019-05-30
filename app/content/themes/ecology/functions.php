@@ -66,8 +66,8 @@ if ( ! function_exists( 'eco_setup' ) ) :
      * @link https://codex.wordpress.org/Theme_Logo
      */
     add_theme_support( 'custom-logo', array(
-      'height'      => 250,
-      'width'       => 250,
+      'height'      => 70,
+      'width'       => 160,
       'flex-width'  => true,
       'flex-height' => true,
     ) );

@@ -169,7 +169,7 @@
             <?php hv_the_icon('architecture-and-city', 'advantages__icon'); ?>
             <span class="advantages__number">02</span>
           </div>
-          <h3 class="advantages__title">Опыт работы с предприятиями горнодобывающего комплекса</h3>
+          <h3 class="advantages__title">Опыт работы с предприятиями горнодобывающей отрасли</h3>
           <p>В команде работают специалисты с опытом работы на крупнейшых горнодобывающих предприятиях</p>
         </div>
       </div>
@@ -190,7 +190,7 @@
             <span class="advantages__number">04</span>
           </div>
           <h3 class="advantages__title">Оплатим ваши штрафы <br>за свой счет</h3>
-          <p>Получили штраф по нашей недоработке, мы его оплатим.</p>
+          <p>Если вы получите штраф по нашей недоработке? Мы его оплатим.</p>
         </div>
       </div>
     </div>
@@ -253,7 +253,7 @@
       
       <div class="stages-tabs">
         <ul class="stages-tabs__list">
-          <li><a href="#stage-1">1. 5 минут</a></li>
+          <li><a href="#stage-1">1. Заявка</a></li>
           <li><a href="#stage-2">2. Оценка объёмов работы</a></li>
           <li><a href="#stage-3">3. Коммерческое предложение</a></li>
           <li><a href="#stage-4">4. Договор</a></li>
@@ -272,7 +272,7 @@
               </span>
             </a>
           </li>
-          <li><a href="#stage-8">8. Получаем разрешительный <br>документ</a></li>
+          <li><a href="#stage-8">Согласование проекта с госорганами</a></li>
         </ul>
 
         <div class="stages-tabs__item" id="stage-1">
@@ -282,7 +282,7 @@
               <?php hv_the_icon('customer-service', 'stages-tabs__icon'); ?>
             </div>
           </div>
-          <h3 class="stages-tabs__title">1. 5 минут</h3>
+          <h3 class="stages-tabs__title">1. Заявка</h3>
           <p>Оставите заявку и мы вам перезвоним.</p>
           <p>Либо звоните бесплатно по тел. <br><a href="tel:88002506774">8 (800) 250-67-74</a></p>
           <a href="#" class="btn callback_open">Заказать звонок</a>
@@ -428,14 +428,14 @@
               <?php hv_the_icon('card', 'cost__icon'); ?>
             </div>
             <h3 class="cost__title">Никакой предоплаты</h3>
-            <p>Работая с нами вы застрахованы от обмана. <br>Сначала принимаете работу потом платите.</p>
+            <p>Сотрудничая с нами, вы застрахованы от обмана. <br>Оплата осуществляется после получения первых результатов работы.</p>
           </div>
           <div class="cost__item">
             <div class="cost__icon-wrap">
               <?php hv_the_icon('check-mark', 'cost__icon'); ?>
             </div>
             <h3 class="cost__title">Прозрачное ценообразование</h3>
-            <p>Вы получите Коммерческое предложение <br>В котором даже школьнику будет понятна <br>и обоснована каждая цифра</p>
+            <p>Вы получите Коммерческое предложение <br>в котором каждая цифра будет обоснована <br>и понятна даже школьнику</p>
           </div>
         </div>
       </div>
@@ -453,7 +453,7 @@
 <section class="delivery">
   <div class="container">
     <div class="section-head">
-      <h2 class="section-title">Доставка оригинал документа курьером по всей России</h2>
+      <h2 class="section-title">Доставка оригиналов документов курьером по всей России</h2>
       <p>в течении 4 дней за наш счет</p>
     </div>
 
@@ -573,7 +573,7 @@
                 </div>
                 <ul class="result__social">
                   <?php if (get_sub_field('whatsapp')): ?>
-                    <li>
+                    <li class="result__social-item result__social-item--ws">
                       <a href="<?php echo esc_url(get_sub_field('whatsapp')); ?>" target="_blank">
                         <div class="result__social-icon-wrap">
                           <img src="<?php echo THEME_URL; ?>/images/general/whatsapp.svg" width="24" alt="">
@@ -583,7 +583,7 @@
                     </li>
                   <?php endif; ?>
                   <?php if (get_sub_field('vk')): ?>
-                    <li>
+                    <li class="result__social-item result__social-item--vk">
                       <a href="<?php echo esc_url(get_sub_field('vk')); ?>" target="_blank">
                         <div class="result__social-icon-wrap">
                           <img src="<?php echo THEME_URL; ?>/images/general/vk.svg" width="24" alt="">
@@ -593,7 +593,7 @@
                     </li>
                   <?php endif; ?>
                   <?php if (get_sub_field('direct')): ?>
-                    <li>
+                    <li class="result__social-item result__social-item--insta">
                       <a href="<?php echo esc_url(get_sub_field('direct')); ?>" target="_blank">
                         <div class="result__social-icon-wrap">
                           <img src="<?php echo THEME_URL; ?>/images/general/instagram.svg" width="24" alt="">

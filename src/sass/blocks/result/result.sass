@@ -126,7 +126,7 @@
       display: flex
       align-items: center
       justify-content: center
-    li
+    &-item
       text-align: center
       margin-bottom: 20px
       +r(992)
@@ -136,6 +136,15 @@
         margin-bottom: 0
         +r(992)
           margin-right: 0
+      &--ws
+        .result__social-icon-wrap
+          background-color: #09bb07
+      &--vk
+        .result__social-icon-wrap
+          background-color: #467fc2
+      &--insta
+        .result__social-icon-wrap
+          background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)
     a
       font-size: 12px
       color: #fff

@@ -26,7 +26,7 @@ function eco_custom_header_setup() {
     'wp-head-callback'       => 'eco_header_style',
   ) ) );
 }
-add_action( 'after_setup_theme', 'eco_custom_header_setup' );
+//add_action( 'after_setup_theme', 'eco_custom_header_setup' );
 
 if ( ! function_exists( 'eco_header_style' ) ) :
   /**
