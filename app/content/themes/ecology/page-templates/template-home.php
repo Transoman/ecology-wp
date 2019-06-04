@@ -279,7 +279,6 @@
 
         <div class="stages-tabs__item" id="stage-1">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-1.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('customer-service', 'stages-tabs__icon'); ?>
             </div>
@@ -292,7 +291,6 @@
 
         <div class="stages-tabs__item" id="stage-2">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-2.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('checklist', 'stages-tabs__icon'); ?>
             </div>
@@ -303,7 +301,6 @@
 
         <div class="stages-tabs__item" id="stage-3">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-3.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('handshake', 'stages-tabs__icon'); ?>
             </div>
@@ -314,7 +311,6 @@
 
         <div class="stages-tabs__item" id="stage-4">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-4.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('contract', 'stages-tabs__icon'); ?>
             </div>
@@ -325,7 +321,6 @@
 
         <div class="stages-tabs__item" id="stage-5">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-5.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('report', 'stages-tabs__icon'); ?>
             </div>
@@ -336,7 +331,6 @@
 
         <div class="stages-tabs__item" id="stage-6">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-6.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('collective', 'stages-tabs__icon'); ?>
             </div>
@@ -346,7 +340,6 @@
 
         <div class="stages-tabs__item" id="stage-7">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-7.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('training', 'stages-tabs__icon'); ?>
             </div>
@@ -356,7 +349,6 @@
 
         <div class="stages-tabs__item" id="stage-8">
           <div class="stages-tabs__img-wrap">
-            <img src="<?php echo THEME_URL; ?>/images/content/stage-8.jpg" alt="">
             <div class="stages-tabs__icon-wrap">
               <?php hv_the_icon('insurance', 'stages-tabs__icon'); ?>
             </div>
