@@ -94,7 +94,9 @@
           <div class="container">
             <div class="section-head">
               <h2 class="section-title"><?php the_sub_field('title'); ?></h2>
-              <p><?php the_sub_field('descr'); ?></p>
+              <?php if (get_sub_field('descr')): ?>
+                <p><?php the_sub_field('descr'); ?></p>
+              <?php endif; ?>
             </div>
 
             <?php if (have_rows('list')): ?>
