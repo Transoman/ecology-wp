@@ -3,6 +3,7 @@
   <footer class="footer">
     <div class="container">
       <p class="copy">&copy; Copyright | Все права защищены</p>
+      <p class="footer__dev">Сделано в <a href="https://bestslide.pro" target="_blank">bestslide.pro</a></p>
     </div>
   </footer><!-- #colophon -->
 
